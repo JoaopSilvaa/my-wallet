@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { connect } from 'react-redux';
 import { newExpense, received } from '../actions';
+import './Table.css';
 
 class Table extends React.Component {
   editLine = (state) => {
@@ -66,6 +67,7 @@ class Table extends React.Component {
                   </td>
                   <td>
                     <button
+                      className='buttonEditTable'
                       type="button"
                       data-testid="edit-btn"
                       onClick={ () => this.editLine(element) }
@@ -73,6 +75,7 @@ class Table extends React.Component {
                       Editar
                     </button>
                     <button
+                      className='buttonDeletTable' 
                       data-testid="delete-btn"
                       type="button"
                       onClick={ () => this.deleteLine(element.id) }

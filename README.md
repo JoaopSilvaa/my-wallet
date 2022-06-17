@@ -27,4 +27,12 @@ npm install
   npm start
   ```
 
-Este projeto desenvolvido por [João Antônio](https://www.linkedin.com/in/joaoantoniosilvaa/) durante o curso de Desenvolvimento de Software na [Trybe](https://www.betrybe.com/) 
+## Gifs de demonstração do projeto
+- Login e adicionando despesas
+![imagem](gifs/Gif1.webm)
+
+- Editando e excluindo despesas
+![imagem](gifs/Gif2.webm)
+
+
+Este projeto foi desenvolvido por [João Antônio](https://www.linkedin.com/in/joaoantoniosilvaa/) durante o curso de Desenvolvimento de Software na [Trybe](https://www.betrybe.com/) 

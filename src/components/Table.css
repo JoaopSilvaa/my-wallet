@@ -1,0 +1,32 @@
+th {
+    padding: 15px;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+.buttonEditTable {
+    border-radius: 8px;
+    padding: 4px;
+    font-size: 15px;
+    background-color: rgb(15, 71, 1);
+    color: aliceblue;
+}
+
+.buttonDeletTable {
+    border-radius: 8px;
+    padding: 4px;
+    font-size: 15px; 
+    background-color: rgb(71, 1, 1);
+    color: aliceblue;
+}
+
+.buttonEditTable:hover {
+    background-color: rgb(71, 1, 171);
+}
+
+.buttonDeletTable:hover {
+    background-color: rgb(71, 1, 171);
+}

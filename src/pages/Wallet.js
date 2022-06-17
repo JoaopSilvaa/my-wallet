@@ -5,6 +5,8 @@ import { captureExpense, captureValueAndCurrency, fetchAPI } from '../actions';
 import Header from '../components/Header';
 import Table from '../components/Table';
 import FormEdit from '../components/FormEdit';
+import './Wallet.css';
+import Footer from '../components/Footer';
 
 const alim = 'Alimentação';
 
@@ -64,14 +66,15 @@ class Wallet extends React.Component {
     const { value, description, currency, method, tag } = this.state;
     const { currencies, bool } = this.props;
     return (
-      <div>
+      <div className='divWallet'>
         <Header />
         {bool !== true
           ?
-          <section>
+          <section className='form'>
             <label htmlFor="value">
               Valor:
-              <input
+              <input 
+                className='inputWallet'
                 id="value"
                 name="value"
                 value={ value }
@@ -81,7 +84,8 @@ class Wallet extends React.Component {
             </label>
             <label htmlFor="currency">
               Moeda:
-              <select
+              <select 
+                className='selectWallet'
                 id="currency"
                 name="currency"
                 value={ currency }
@@ -93,7 +97,8 @@ class Wallet extends React.Component {
             </label>
             <label htmlFor="method">
               Método de pagamento:
-              <select
+              <select 
+                className='selectWallet'
                 id="method"
                 data-testid="method-input"
                 name="method"
@@ -107,7 +112,8 @@ class Wallet extends React.Component {
             </label>
             <label htmlFor="tag">
               Categoria:
-              <select
+              <select 
+                className='selectWallet'
                 id="tag"
                 data-testid="tag-input"
                 name="tag"
@@ -123,7 +129,8 @@ class Wallet extends React.Component {
             </label>
             <label htmlFor="description">
               Descrição:
-              <input
+              <input 
+                className='inputWallet'
                 id="description"
                 data-testid="description-input"
                 name="description"
@@ -132,6 +139,7 @@ class Wallet extends React.Component {
               />
             </label>
             <button
+              className='butonWallet'
               type="button"
               onClick={ this.handleClick }
             >
@@ -141,9 +149,10 @@ class Wallet extends React.Component {
           :
           <FormEdit currencies={currencies}/>
         }
-        <section>
+        <section className='table'>
           <Table />
         </section>
+        <Footer />
       </div>
     );
   }

@@ -33,10 +33,11 @@ class FormEdit extends React.Component {
     const { currencies } = this.props;
     return (
       <div>
-        <section>
+        <section className='form'>
           <label htmlFor="value">
             Valor:
-            <input
+            <input 
+              className='inputWallet'
               id="value"
               name="value"
               value={ value }
@@ -47,6 +48,7 @@ class FormEdit extends React.Component {
           <label htmlFor="currency">
             Moeda:
             <select
+              className='selectWallet'
               id="currency"
               name="currency"
               value={ currency }
@@ -58,6 +60,7 @@ class FormEdit extends React.Component {
           <label htmlFor="method">
             Método de pagamento:
             <select
+              className='selectWallet'
               id="method"
               data-testid="method-input"
               name="method"
@@ -72,6 +75,7 @@ class FormEdit extends React.Component {
           <label htmlFor="tag">
             Categoria:
             <select
+              className='selectWallet'
               id="tag"
               data-testid="tag-input"
               name="tag"
@@ -88,6 +92,7 @@ class FormEdit extends React.Component {
           <label htmlFor="description">
             Descrição:
             <input
+              className='inputWallet'
               id="description"
               data-testid="description-input"
               name="description"
@@ -96,6 +101,7 @@ class FormEdit extends React.Component {
             />
           </label>
           <button
+            className='butonWallet'
             type="button"
             onClick={ this.handleClick }
           >

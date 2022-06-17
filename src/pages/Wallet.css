@@ -1,0 +1,59 @@
+.divWallet {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: rgba(44, 44, 44, 0.842);
+    color: aliceblue;
+}
+
+.table {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(66, 66, 66, 0.842);
+    color: aliceblue;
+    font-size: 18px;
+    margin-bottom: 600px;
+}
+
+label {
+    font-weight: 600;
+    font-size: 18px;
+    padding-left: 8px;
+}
+
+.inputWallet {
+    margin-left: 5px;
+    border-radius: 8px;
+    padding: 4px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.selectWallet {
+    margin-left: 10px;
+    border-radius: 8px;
+    padding: 4px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.butonWallet {
+    margin-left: 20px;
+    border-radius: 8px;
+    padding: 4px;
+    font-size: 15px;
+}
+
+.butonWallet:hover {
+    background-color: rgb(1, 8, 71);
+    color: aliceblue;
+    text-align: center;
+    transition: 0.2s;
+}

@@ -1,6 +1,9 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import { connect } from 'react-redux';
+import './Header.css';
+import wallet from '../icons/wallet-solid.svg';
+import user from '../icons/user-solid.svg';
 
 class Header extends React.Component {
   render() {
@@ -11,14 +14,17 @@ class Header extends React.Component {
     const number = 0;
 
     return (
-      <header>
-        <span data-testid="email-field">{ email }</span>
+      <header className='header'>
+        <img className='iconsHeader' src={user} alt='user'/>
+        <span className='textHeader' data-testid="email-field">{ email }</span>
+        <img className='iconsHeader' src={wallet} alt='carteira'/>
         <span
           data-testid="total-field"
+          className='numberHeader'
         >
           {values.length !== 0 ? (total.toFixed(2)) : number}
         </span>
-        <span data-testid="header-currency-field">BRL</span>
+        <span className='brl' data-testid="header-currency-field">BRL</span>
       </header>
 
     );
