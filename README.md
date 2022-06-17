@@ -29,10 +29,10 @@ npm install
 
 ## Gifs de demonstração do projeto
 - Login e adicionando despesas
-![imagem](gifs/Gif1.webm)
+![imagem](gifs/Gif1.gif)
 
 - Editando e excluindo despesas
-![imagem](gifs/Gif2.webm)
+![imagem](gifs/Gif2.gif)
 
 
 Este projeto foi desenvolvido por [João Antônio](https://www.linkedin.com/in/joaoantoniosilvaa/) durante o curso de Desenvolvimento de Software na [Trybe](https://www.betrybe.com/) 
